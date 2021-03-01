@@ -1,0 +1,8 @@
+Motion4Sim
+
+Version  1.16 Beta
+
+- change LCD - Display Init
+- usb cdc code for target usb port (near ethernet connector) support asyn. cdc transfer
+- enter bootloader via emergency-bt online-sw encoder-bt pressed and power on
+- modified calculation of rotat. and linear inverse kinematics
