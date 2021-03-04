@@ -1,5 +1,12 @@
 Motion4Sim
 
+Version 1.17 Beta
+
+- new usb remote configuration interface
+- simple gui app  on github
+- please check plattform after transmit configuration data controller will reset
+
+
 Version  1.16 Beta
 
 - change LCD - Display Init
