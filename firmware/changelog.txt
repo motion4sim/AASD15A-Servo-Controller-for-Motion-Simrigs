@@ -1,5 +1,14 @@
 Motion4Sim
 
+
+Version 1.18
+
+- remote app expanded ,for now function only to native usb port
+- native usb port and ftdi usb port working together now
+- native usb port not for motiondata due to usb stack problems with pulse engine
+- some changes to onboard motion cueing  now xyz koordsystem works like flypt
+- motion cueing with linear 6dof rig works thanks to [GER]Basti-Discord
+
 Version 1.17 Beta
 
 - new usb remote configuration interface
