@@ -1,6 +1,17 @@
 Motion4Sim
 
 
+Version 1.19
+
+- new data mode for floating point values from flypt mover
+- changed some  motion cueing calculation for linear actuators
+- improved 3d calculation to support center of rotation 
+- fixed emergency button problems
+- factory reset available for linear and rotating actuators
+- remote app some minor changes
+- fixed bug loading factory data when using remote app before calibrating
+
+
 Version 1.18
 
 - remote app expanded ,for now function only to native usb port
