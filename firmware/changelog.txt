@@ -1,5 +1,18 @@
 Motion4Sim
 
+Version 1.20
+
+
+Attention: 	- eeprom data changed  _ after flashing do factory reset !
+		- save your settings to paper remote App changed data completely
+
+- complete new actuator settings, each actuator can be different , special for linear rigs seatmover
+- keys and buttons using interrupts now
+- native usb port on same70 board only for fw update
+- remote app works now only with motion data port on breakout port
+- remote app new version release for this firmware
+- lcd fps setting now working
+- new option for encoder direction
 
 Version 1.19
 
