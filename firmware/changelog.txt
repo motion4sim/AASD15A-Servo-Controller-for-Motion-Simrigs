@@ -1,5 +1,12 @@
 Motion4Sim
 
+Version 1.30
+
+- added few remote commands for remote app testing features
+- now fw has support for Sim Racing Studio in amcsd15a mode
+- changed filter timing 
+- minor bugfixes and code changes
+
 Version 1.20
 
 
