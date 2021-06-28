@@ -3,9 +3,12 @@ Motion4Sim
 Version 1.41
 
 -added interface for remote handheld app at native usb port
-  (u have to wire the native usb port
+  (u have to wire the native usb port)
 - minor code changes
 - spikefilter led keeps on bug fixed
+- transmit data from app doesnt reboot  fixed
+- memory protection feauture inkluded
+- updated bootloader for automatic software bootloadermode ( board delivered later as 062821)
 
 Version 1.30
 
