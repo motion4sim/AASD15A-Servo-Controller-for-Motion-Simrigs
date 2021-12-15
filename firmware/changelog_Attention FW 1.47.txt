@@ -1,5 +1,24 @@
 Motion4Sim
 
+Version 1.47
+
+Attention: 	- eeprom data changed  _ after flashing do factory reset !
+
+- fixed some servo7 bugs
+- fixed linear actuator safety bug (safety >pitch)
+- added function for servobrakes WIP
+- added new transition to motion
+- added adjustable time for transition to motion
+- added offset for linear actuators
+- added adjustable Online Position
+- added adjustable Maximum Gain
+- better actuator check function (also while homing)
+- smaller changes in menu texts
+- some value checks added
+- most new settings only from handheld adjustable actually
+
+thanks to Dirty for testing
+
 Version 1.42
 
 Attention: 	- eeprom data changed  _ after flashing do factory reset !
