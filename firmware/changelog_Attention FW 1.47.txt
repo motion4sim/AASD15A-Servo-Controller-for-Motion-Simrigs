@@ -13,6 +13,7 @@ Attention: 	- eeprom data changed  _ after flashing do factory reset !
 - added adjustable Online Position
 - added adjustable Maximum Gain
 - better actuator check function (also while homing)
+- added shutdown function (drives actuators down to homing point and powers servos off; turn left in menu ) 
 - smaller changes in menu texts
 - some value checks added
 - most new settings only from handheld adjustable actually
