@@ -1,0 +1,27 @@
+Motion4Sim DashBoard App
+
+thanks to Milligaus for developing C# Interface
+
+- Handheld support to use controller with software only
+- Configuration of all Settings in Config section of App
+- Actuator 7 configuration will follow soon
+- Memory Mapped File (MMF) support to run in Background while using Mover or Simtools
+- UDP support is planned
+- Software Keys and Buttons could assigned for OnlineSwitch and Emergency Switch functions
+- Support for Gamepads,Joystick Keyboard Buttons (W.I.P.)
+
+
+for Memory Mapped File use
+
+"Motion4Sim_tx"  to send data to Controller from Mover etc
+or
+"Motion4Sim_rx" to recieve answers from Controller
+
+
+please report bugs to discord (Motion4Sim@4206)
+
+thanks for using
+
+
+
+
