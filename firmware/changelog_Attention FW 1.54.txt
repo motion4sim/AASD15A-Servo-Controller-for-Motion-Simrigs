@@ -6,7 +6,7 @@ Version 1.54
 - works only with new DasBoard App correct,please update
 - always do a factory reset after flash
 - some bugfixes, linear factory reset, and 6dof float mode
-
+- fixed srs
 
 Version 1.51
 
@@ -17,6 +17,7 @@ Attention:	Factory reset needed !! storage  changed
 - factory reset possible with on board button (press 4 seconds for rotating Act setting and 8 seconds for linear Act settings)  
 - stability of usb for apps improved
 - update also to latest apps
+
 
 Version 1.47
 
