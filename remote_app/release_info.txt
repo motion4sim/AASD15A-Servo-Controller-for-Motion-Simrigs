@@ -11,6 +11,9 @@ thanks to Milligaus for developing C# Interface
 - Support for Gamepads,Joystick Keyboard Buttons (W.I.P.)
 
 
+- sometimes problems with bluethoot devices please deactivate to be proove
+
+
 for Memory Mapped File use
 
 "Motion4Sim_tx"  to send data to Controller from Mover etc

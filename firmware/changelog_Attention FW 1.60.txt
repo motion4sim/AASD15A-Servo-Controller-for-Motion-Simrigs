@@ -1,0 +1,129 @@
+Motion4Sim
+
+
+Version 1.60 Factory reset needed !! storage  changed
+
+- included SFX RIG types in kinematics calculation BETA!
+- activatet Native USB Port to work with Dashboard APP and Motiondata ->still not good as it should use MotionData port
+- improved interface to Dashboard App
+- load and Install also new Dashboard App
+
+
+Version 1.54
+
+- serial data interface  transfer extended for new Dashboard App
+- works only with new DasBoard App correct,please update
+- always do a factory reset after flash
+- some bugfixes, linear factory reset, and 6dof float mode
+- fixed srs
+
+Version 1.51
+
+Attention:	Factory reset needed !! storage  changed
+
+- rewrite of service actuator moving functions
+- usersettings moved to internal MCU flash storage  -> factory reset needed ! 
+- factory reset possible with on board button (press 4 seconds for rotating Act setting and 8 seconds for linear Act settings)  
+- stability of usb for apps improved
+- update also to latest apps
+
+
+Version 1.47
+
+Attention: 	- eeprom data changed  _ after flashing do factory reset !
+
+- fixed some servo7 bugs
+- fixed linear actuator safety bug (safety >pitch)
+- added function for servobrakes WIP
+- added new transition to motion
+- added adjustable time for transition to motion
+- added offset for linear actuators
+- added adjustable Online Position
+- added adjustable Maximum Gain
+- better actuator check function (also while homing)
+- added shutdown function (drives actuators down to homing point and powers servos off; turn left in menu ) 
+- smaller changes in menu texts
+- some value checks added
+- most new settings only from handheld adjustable actually
+
+thanks to Dirty for testing
+
+Version 1.42
+
+Attention: 	- eeprom data changed  _ after flashing do factory reset !
+		- save your settings to paper!! remote App changed data completely
+		- install new Handheld app version
+		- install new config app version
+
+- added fully support for servo 7 ( remove some resistors on board before use)
+- added support for infinite actuators
+- bug fix of version 1.41_fix1 display stuck after flash
+- some bugs fixed in srs autoconnect
+- smaller changes in menu texts
+- fixed bugs with remote handheld app
+- changed actuator check function 
+
+
+Version 1.41
+
+-added interface for remote handheld app at native usb port
+  (u have to wire the native usb port)
+- minor code changes
+- spikefilter led keeps on bug fixed
+- transmit data from app doesnt reboot  fixed
+- memory protection feauture inkluded
+- updated bootloader for automatic software bootloadermode ( board delivered later as 062821)
+
+Version 1.30
+
+- added few remote commands for remote app testing features
+- now fw has support for Sim Racing Studio in amcsd15a mode
+- changed filter timing 
+- minor bugfixes and code changes
+
+Version 1.20
+
+
+Attention: 	- eeprom data changed  _ after flashing do factory reset !
+		- save your settings to paper remote App changed data completely
+
+- complete new actuator settings, each actuator can be different , special for linear rigs seatmover
+- keys and buttons using interrupts now
+- native usb port on same70 board only for fw update
+- remote app works now only with motion data port on breakout port
+- remote app new version release for this firmware
+- lcd fps setting now working
+- new option for encoder direction
+
+Version 1.19
+
+- new data mode for floating point values from flypt mover
+- changed some  motion cueing calculation for linear actuators
+- improved 3d calculation to support center of rotation 
+- fixed emergency button problems
+- factory reset available for linear and rotating actuators
+- remote app some minor changes
+- fixed bug loading factory data when using remote app before calibrating
+
+
+Version 1.18
+
+- remote app expanded ,for now function only to native usb port
+- native usb port and ftdi usb port working together now
+- native usb port not for motiondata due to usb stack problems with pulse engine
+- some changes to onboard motion cueing  now xyz koordsystem works like flypt
+- motion cueing with linear 6dof rig works thanks to [GER]Basti-Discord
+
+Version 1.17 Beta
+
+- new usb remote configuration interface
+- simple gui app  on github
+- please check plattform after transmit configuration data controller will reset
+
+
+Version  1.16 Beta
+
+- change LCD - Display Init
+- usb cdc code for target usb port (near ethernet connector) support asyn. cdc transfer
+- enter bootloader via emergency-bt online-sw encoder-bt pressed and power on
+- modified calculation of rotat. and linear inverse kinematics
