@@ -1,5 +1,16 @@
 Motion4Sim DashBoard App
 
+
+Release v2.10 Beta
+
+- code speedup
+- changed Joysticksupport
+- removed some buggy feautres
+- underlaying api complete rewrite
+- improved serial data connection
+
+Release v1.60
+
 thanks to Milligaus for developing C# Interface
 
 - Handheld support to use controller with software only
