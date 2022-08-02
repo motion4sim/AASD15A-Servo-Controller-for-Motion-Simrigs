@@ -1,5 +1,10 @@
 Motion4Sim DashBoard App
 
+Release v2.15 Beta
+
+- fixed flashing not working
+- fixed autoconnect
+
 
 Release v2.10 Beta
 
