@@ -1,7 +1,13 @@
 Motion4Sim
 
+Version 2.11 released
 
-Version 2.01 released
+- added  support for SFX 3 actor  System in Kinematiks mode
+- no factory reset needed
+- fixed homing issue with linear systems other then 6dof
+- lcd garbage issue still exist _ screen reinit time now is shorter
+
+Version 2.01
 
 -complete rewrite of the motion engine
 -now best motion ever 

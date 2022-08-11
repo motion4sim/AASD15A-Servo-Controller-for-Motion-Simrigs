@@ -1,5 +1,12 @@
 Motion4Sim DashBoard App
 
+Release v2.16 still Beta
+
+- fixed homing speed data
+- fixed crashing  App sometimes special with ftdi boards
+- some layout changes
+- added sfx 3 actor systems
+
 Release v2.15 Beta
 
 - fixed flashing not working
