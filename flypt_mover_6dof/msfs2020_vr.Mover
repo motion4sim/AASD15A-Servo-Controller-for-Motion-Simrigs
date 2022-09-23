@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <FLYPT_MOVER Version="2.9.9">
   <MAIN>
-    <Location>4353,253</Location>
+    <Location>4517,261</Location>
   </MAIN>
   <OPTIONS>
     <chkMinimize>False</chkMinimize>
-    <chkHighPrecision>False</chkHighPrecision>
+    <chkHighPrecision>True</chkHighPrecision>
     <nudCalculationRate>2</nudCalculationRate>
     <nudFilterTime>2</nudFilterTime>
     <nudSourceTime>5</nudSourceTime>
@@ -16,39 +16,33 @@
     <decreaseRigGainHotKey>Alt+D</decreaseRigGainHotKey>
   </OPTIONS>
   <SOURCE>
-    <Type>Mover.Sources.UDP.XPlane11</Type>
-    <Name>SOURCE :: XPLANE 11 (UDP)</Name>
-    <Location>4344,432</Location>
+    <Type>Mover.Sources.MMF.P3D</Type>
+    <Name>SOURCE :: P3D (MMF+DLL)</Name>
+    <Location>4369,827</Location>
     <Size>550,550</Size>
-    <Visible>True</Visible>
+    <Visible>False</Visible>
     <CONTROLS>
       <PNLOptions.NUDSway>0</PNLOptions.NUDSway>
-      <PNLOptions.NUDToGroundSpeed>0.2</PNLOptions.NUDToGroundSpeed>
-      <PNLOptions.NUDForwardPort>48000</PNLOptions.NUDForwardPort>
       <PNLOptions.NUDHeave>0</PNLOptions.NUDHeave>
       <PNLOptions.NUDSurge>0</PNLOptions.NUDSurge>
-      <PNLOptions.NUDPort>49002</PNLOptions.NUDPort>
-      <PNLOptions.NUDToAirSpeed>0.01</PNLOptions.NUDToAirSpeed>
       <PNLOptions.NUDSpeedEffect>0.015</PNLOptions.NUDSpeedEffect>
-      <PNLOptions.AFCLongitudinalFilter.txtFilterText>EMAHP(LDYNLP(VALUE;0;5);100)</PNLOptions.AFCLongitudinalFilter.txtFilterText>
-      <PNLOptions.AFCLateralFilter.txtFilterText>EMAHP(LDYNLP(VALUE;0;5);100)</PNLOptions.AFCLateralFilter.txtFilterText>
-      <TXTUniqueName>9</TXTUniqueName>
-      <TXTName>SOURCE :: XPLANE 11 (UDP)</TXTName>
+      <PNLOptions.NUDToAirSpeed>0.01</PNLOptions.NUDToAirSpeed>
+      <PNLOptions.NUDToGroundSpeed>0.2</PNLOptions.NUDToGroundSpeed>
+      <TXTUniqueName>10</TXTUniqueName>
+      <TXTName>SOURCE :: P3D (MMF+DLL)</TXTName>
       <SHInputValues.chkShowHide>True</SHInputValues.chkShowHide>
       <SHOptions.chkShowHide>True</SHOptions.chkShowHide>
-      <PNLOptions.CHKForwardUDP>False</PNLOptions.CHKForwardUDP>
       <CHKAutoConnect>True</CHKAutoConnect>
-      <PNLOptions.DDLLandingGear>Basic 3 wheels</PNLOptions.DDLLandingGear>
     </CONTROLS>
   </SOURCE>
   <DIRECT>
     <Type>Mover.Directs.MultiDirect</Type>
     <Name>MULTI DIRECT :: ID38</Name>
-    <Location>1608,145</Location>
+    <Location>3888,809</Location>
     <Size>1033,517</Size>
     <Visible>False</Visible>
     <CONTROLS>
-      <pnlValues.nudValueGain3>1</pnlValues.nudValueGain3>
+      <pnlValues.nudValueGain3>-1</pnlValues.nudValueGain3>
       <pnlValues.nudValueGain0>10.000</pnlValues.nudValueGain0>
       <pnlValues.nudValueGain1>1</pnlValues.nudValueGain1>
       <pnlValues.nudValueGain2>1</pnlValues.nudValueGain2>
@@ -115,10 +109,10 @@
       <pnlValues.nudValueGain64>1</pnlValues.nudValueGain64>
       <pnlValues.nudValueGain65>1</pnlValues.nudValueGain65>
       <NUDDefault>0</NUDDefault>
-      <NUDTo>100</NUDTo>
-      <NUDFrom>-100</NUDFrom>
+      <NUDTo>180</NUDTo>
+      <NUDFrom>-180</NUDFrom>
       <NUDActuatorsBitOutput>24</NUDActuatorsBitOutput>
-      <pnlValues.afcValueFilter3.txtFilterText>LOGISTIC(EMALP(EMALP(EMAHP(GAIN(VALUE;500);50);1000);1000);170;4)</pnlValues.afcValueFilter3.txtFilterText>
+      <pnlValues.afcValueFilter3.txtFilterText>LOGISTIC(EMALP(EMALP(EMAHP(GAIN(VALUE;150);50);800);800);100;4)</pnlValues.afcValueFilter3.txtFilterText>
       <pnlValues.afcValueFilter0.txtFilterText>LOGISTIC(VALUE;10;1)</pnlValues.afcValueFilter0.txtFilterText>
       <pnlValues.afcValueFilter1.txtFilterText>VALUE</pnlValues.afcValueFilter1.txtFilterText>
       <pnlValues.afcValueFilter2.txtFilterText>LOGISTIC(EMALP(EMALP(EMAHP(GAIN(VALUE;1);50);700);700);100;4)</pnlValues.afcValueFilter2.txtFilterText>
@@ -257,20 +251,17 @@
       <pnlValues.chkValue64>False</pnlValues.chkValue64>
       <pnlValues.chkValue65>False</pnlValues.chkValue65>
       <panel1.ddlValue>Lateral acc. with gravity</panel1.ddlValue>
-      <TVInputSelection>
-        <item>SOURCE :: XPLANE 11 (UDP)</item>
-        <item>SOURCE :: XPLANE 11 GROUND (UDP)</item>
-      </TVInputSelection>
+      <TVInputSelection />
     </CONTROLS>
   </DIRECT>
   <DIRECT>
     <Type>Mover.Directs.MultiDirect</Type>
     <Name>MULTI DIRECT :: ID39</Name>
-    <Location>1613,152</Location>
+    <Location>3317,840</Location>
     <Size>1033,517</Size>
     <Visible>False</Visible>
     <CONTROLS>
-      <pnlValues.nudValueGain8>1</pnlValues.nudValueGain8>
+      <pnlValues.nudValueGain8>-1</pnlValues.nudValueGain8>
       <pnlValues.nudValueGain0>1</pnlValues.nudValueGain0>
       <pnlValues.nudValueGain1>-10.000</pnlValues.nudValueGain1>
       <pnlValues.nudValueGain2>1</pnlValues.nudValueGain2>
@@ -337,10 +328,10 @@
       <pnlValues.nudValueGain64>1</pnlValues.nudValueGain64>
       <pnlValues.nudValueGain65>1</pnlValues.nudValueGain65>
       <NUDDefault>0</NUDDefault>
-      <NUDTo>100</NUDTo>
-      <NUDFrom>-100</NUDFrom>
+      <NUDTo>180</NUDTo>
+      <NUDFrom>-180</NUDFrom>
       <NUDActuatorsBitOutput>24</NUDActuatorsBitOutput>
-      <pnlValues.afcValueFilter8.txtFilterText>LOGISTIC(EMALP(EMALP(EMAHP(GAIN(VALUE;500);50);700);700);170;2)</pnlValues.afcValueFilter8.txtFilterText>
+      <pnlValues.afcValueFilter8.txtFilterText>LOGISTIC(EMALP(EMALP(EMAHP(GAIN(VALUE;500);50);500);500);100;2)</pnlValues.afcValueFilter8.txtFilterText>
       <pnlValues.afcValueFilter0.txtFilterText>VALUE</pnlValues.afcValueFilter0.txtFilterText>
       <pnlValues.afcValueFilter1.txtFilterText>LOGISTIC(VALUE;10;1)</pnlValues.afcValueFilter1.txtFilterText>
       <pnlValues.afcValueFilter2.txtFilterText>VALUE</pnlValues.afcValueFilter2.txtFilterText>
@@ -480,15 +471,15 @@
       <pnlValues.chkValue65>False</pnlValues.chkValue65>
       <panel1.ddlValue>Longitudinal acc. with gravity</panel1.ddlValue>
       <TVInputSelection>
-        <item>SOURCE :: XPLANE 11 (UDP)</item>
-        <item>SOURCE :: XPLANE 11 GROUND (UDP)</item>
+        <item>SOURCE :: P3D (MMF+DLL)</item>
+        <item>SOURCE :: P3D (MMF+DLL) (Ground)</item>
       </TVInputSelection>
     </CONTROLS>
   </DIRECT>
   <DIRECT>
     <Type>Mover.Directs.MultiDirect</Type>
     <Name>MULTI DIRECT :: ID40</Name>
-    <Location>2859,269</Location>
+    <Location>3937,844</Location>
     <Size>1033,517</Size>
     <Visible>False</Visible>
     <CONTROLS>
@@ -559,10 +550,10 @@
       <pnlValues.nudValueGain64>1</pnlValues.nudValueGain64>
       <pnlValues.nudValueGain65>1</pnlValues.nudValueGain65>
       <NUDDefault>0</NUDDefault>
-      <NUDTo>100</NUDTo>
-      <NUDFrom>-100</NUDFrom>
+      <NUDTo>180</NUDTo>
+      <NUDFrom>-180</NUDFrom>
       <NUDActuatorsBitOutput>24</NUDActuatorsBitOutput>
-      <pnlValues.afcValueFilter13.txtFilterText>LOGISTIC(EMALP(EMALP(EMALP(EMAHP(MUL(VALUE;250);10);250);250);250);80;4)</pnlValues.afcValueFilter13.txtFilterText>
+      <pnlValues.afcValueFilter13.txtFilterText>LOGISTIC(EMALP(EMALP(EMALP(EMAHP(MUL(VALUE;250);15);500);500);500);80;4)</pnlValues.afcValueFilter13.txtFilterText>
       <pnlValues.afcValueFilter0.txtFilterText>VALUE</pnlValues.afcValueFilter0.txtFilterText>
       <pnlValues.afcValueFilter1.txtFilterText>VALUE</pnlValues.afcValueFilter1.txtFilterText>
       <pnlValues.afcValueFilter2.txtFilterText>LOGISTIC(VALUE;10;1)</pnlValues.afcValueFilter2.txtFilterText>
@@ -701,16 +692,13 @@
       <pnlValues.chkValue64>False</pnlValues.chkValue64>
       <pnlValues.chkValue65>False</pnlValues.chkValue65>
       <panel1.ddlValue>Vertical acc. with gravity</panel1.ddlValue>
-      <TVInputSelection>
-        <item>SOURCE :: XPLANE 11 (UDP)</item>
-        <item>SOURCE :: XPLANE 11 GROUND (UDP)</item>
-      </TVInputSelection>
+      <TVInputSelection />
     </CONTROLS>
   </DIRECT>
   <DIRECT>
     <Type>Mover.Directs.MultiDirect</Type>
     <Name>MULTI DIRECT :: ID41</Name>
-    <Location>2875,310</Location>
+    <Location>3370,833</Location>
     <Size>1033,517</Size>
     <Visible>False</Visible>
     <CONTROLS>
@@ -781,10 +769,10 @@
       <pnlValues.nudValueGain64>1</pnlValues.nudValueGain64>
       <pnlValues.nudValueGain65>1</pnlValues.nudValueGain65>
       <NUDDefault>0</NUDDefault>
-      <NUDTo>24</NUDTo>
-      <NUDFrom>-24</NUDFrom>
+      <NUDTo>30</NUDTo>
+      <NUDFrom>-30</NUDFrom>
       <NUDActuatorsBitOutput>24</NUDActuatorsBitOutput>
-      <pnlValues.afcValueFilter16.txtFilterText>EMALP(EMAHP(VALUE;100);100)</pnlValues.afcValueFilter16.txtFilterText>
+      <pnlValues.afcValueFilter16.txtFilterText>EMALP(EMALP(EMAHP(GAIN(VALUE;10);50);600);600)</pnlValues.afcValueFilter16.txtFilterText>
       <pnlValues.afcValueFilter0.txtFilterText>VALUE</pnlValues.afcValueFilter0.txtFilterText>
       <pnlValues.afcValueFilter1.txtFilterText>VALUE</pnlValues.afcValueFilter1.txtFilterText>
       <pnlValues.afcValueFilter2.txtFilterText>VALUE</pnlValues.afcValueFilter2.txtFilterText>
@@ -924,25 +912,25 @@
       <pnlValues.chkValue65>False</pnlValues.chkValue65>
       <panel1.ddlValue>Yaw speed</panel1.ddlValue>
       <TVInputSelection>
-        <item>SOURCE :: XPLANE 11 (UDP)</item>
-        <item>SOURCE :: XPLANE 11 GROUND (UDP)</item>
+        <item>SOURCE :: P3D (MMF+DLL)</item>
+        <item>SOURCE :: P3D (MMF+DLL) (Ground)</item>
       </TVInputSelection>
     </CONTROLS>
   </DIRECT>
   <DIRECT>
     <Type>Mover.Directs.MultiDirect</Type>
     <Name>MULTI DIRECT :: ID42</Name>
-    <Location>4087,778</Location>
+    <Location>2998,292</Location>
     <Size>1033,517</Size>
     <Visible>False</Visible>
     <CONTROLS>
-      <pnlValues.nudValueGain19>-1</pnlValues.nudValueGain19>
-      <pnlValues.nudValueGain3>1</pnlValues.nudValueGain3>
-      <pnlValues.nudValueGain18>-1</pnlValues.nudValueGain18>
+      <pnlValues.nudValueGain19>1.000</pnlValues.nudValueGain19>
+      <pnlValues.nudValueGain4>-1.000</pnlValues.nudValueGain4>
+      <pnlValues.nudValueGain18>1.000</pnlValues.nudValueGain18>
       <pnlValues.nudValueGain0>0.2</pnlValues.nudValueGain0>
       <pnlValues.nudValueGain1>1</pnlValues.nudValueGain1>
       <pnlValues.nudValueGain2>0.2</pnlValues.nudValueGain2>
-      <pnlValues.nudValueGain4>1</pnlValues.nudValueGain4>
+      <pnlValues.nudValueGain3>0</pnlValues.nudValueGain3>
       <pnlValues.nudValueGain5>1</pnlValues.nudValueGain5>
       <pnlValues.nudValueGain6>1</pnlValues.nudValueGain6>
       <pnlValues.nudValueGain7>1</pnlValues.nudValueGain7>
@@ -1003,16 +991,16 @@
       <pnlValues.nudValueGain64>1</pnlValues.nudValueGain64>
       <pnlValues.nudValueGain65>1</pnlValues.nudValueGain65>
       <NUDDefault>0</NUDDefault>
-      <NUDTo>24</NUDTo>
-      <NUDFrom>-24</NUDFrom>
+      <NUDTo>30</NUDTo>
+      <NUDFrom>-30</NUDFrom>
       <NUDActuatorsBitOutput>24</NUDActuatorsBitOutput>
-      <pnlValues.afcValueFilter19.txtFilterText>LOGISTIC(EMALP(EMALP(EMAHP(GAIN(VALUE;30);5);250);250);15;1)</pnlValues.afcValueFilter19.txtFilterText>
-      <pnlValues.afcValueFilter3.txtFilterText>EMALP(EMALP(EMALP(GAIN(VALUE;3);300);300);300)</pnlValues.afcValueFilter3.txtFilterText>
-      <pnlValues.afcValueFilter18.txtFilterText>REMAP(ROLLOVER(VALUE;90);-90;90;-12;12)</pnlValues.afcValueFilter18.txtFilterText>
+      <pnlValues.afcValueFilter19.txtFilterText>LOGISTIC(EMALP(EMALP(EMAHP(GAIN(VALUE;4);50);350);350);15;1)</pnlValues.afcValueFilter19.txtFilterText>
+      <pnlValues.afcValueFilter4.txtFilterText>EMALP(EMALP(EMALP(GAIN(VALUE;1);300);300);300)</pnlValues.afcValueFilter4.txtFilterText>
+      <pnlValues.afcValueFilter18.txtFilterText>REMAP(ROLLOVER(VALUE;90);-90;90;-30;30)</pnlValues.afcValueFilter18.txtFilterText>
       <pnlValues.afcValueFilter0.txtFilterText>LOGISTIC(VALUE;10;1)</pnlValues.afcValueFilter0.txtFilterText>
       <pnlValues.afcValueFilter1.txtFilterText>VALUE</pnlValues.afcValueFilter1.txtFilterText>
       <pnlValues.afcValueFilter2.txtFilterText>LOGISTIC(VALUE;10;1)</pnlValues.afcValueFilter2.txtFilterText>
-      <pnlValues.afcValueFilter4.txtFilterText>VALUE</pnlValues.afcValueFilter4.txtFilterText>
+      <pnlValues.afcValueFilter3.txtFilterText>EMALP(EMALP(EMALP(GAIN(VALUE;1);300);300);300)</pnlValues.afcValueFilter3.txtFilterText>
       <pnlValues.afcValueFilter5.txtFilterText>VALUE</pnlValues.afcValueFilter5.txtFilterText>
       <pnlValues.afcValueFilter6.txtFilterText>VALUE</pnlValues.afcValueFilter6.txtFilterText>
       <pnlValues.afcValueFilter7.txtFilterText>VALUE</pnlValues.afcValueFilter7.txtFilterText>
@@ -1079,12 +1067,12 @@
       <SHActuatorValues.chkShowHide>True</SHActuatorValues.chkShowHide>
       <SHInputSelection.chkShowHide>True</SHInputSelection.chkShowHide>
       <pnlValues.chkValue19>True</pnlValues.chkValue19>
-      <pnlValues.chkValue3>True</pnlValues.chkValue3>
+      <pnlValues.chkValue4>True</pnlValues.chkValue4>
       <pnlValues.chkValue18>True</pnlValues.chkValue18>
       <pnlValues.chkValue0>False</pnlValues.chkValue0>
       <pnlValues.chkValue1>False</pnlValues.chkValue1>
       <pnlValues.chkValue2>False</pnlValues.chkValue2>
-      <pnlValues.chkValue4>False</pnlValues.chkValue4>
+      <pnlValues.chkValue3>False</pnlValues.chkValue3>
       <pnlValues.chkValue5>False</pnlValues.chkValue5>
       <pnlValues.chkValue6>False</pnlValues.chkValue6>
       <pnlValues.chkValue7>False</pnlValues.chkValue7>
@@ -1146,30 +1134,30 @@
       <pnlValues.chkValue65>False</pnlValues.chkValue65>
       <panel1.ddlValue>Roll position</panel1.ddlValue>
       <TVInputSelection>
-        <item>SOURCE :: XPLANE 11 (UDP)</item>
-        <item>SOURCE :: XPLANE 11 GROUND (UDP)</item>
+        <item>SOURCE :: P3D (MMF+DLL)</item>
+        <item>SOURCE :: P3D (MMF+DLL) (Ground)</item>
       </TVInputSelection>
     </CONTROLS>
   </DIRECT>
   <DIRECT>
     <Type>Mover.Directs.MultiDirect</Type>
     <Name>MULTI DIRECT :: ID43</Name>
-    <Location>4087,773</Location>
+    <Location>3654,566</Location>
     <Size>1033,517</Size>
     <Visible>False</Visible>
     <CONTROLS>
-      <pnlValues.nudValueGain21>1</pnlValues.nudValueGain21>
-      <pnlValues.nudValueGain22>1</pnlValues.nudValueGain22>
-      <pnlValues.nudValueGain3>0</pnlValues.nudValueGain3>
-      <pnlValues.nudValueGain8>1</pnlValues.nudValueGain8>
+      <pnlValues.nudValueGain22>1.000</pnlValues.nudValueGain22>
+      <pnlValues.nudValueGain9>1.000</pnlValues.nudValueGain9>
+      <pnlValues.nudValueGain21>1.000</pnlValues.nudValueGain21>
       <pnlValues.nudValueGain0>1</pnlValues.nudValueGain0>
       <pnlValues.nudValueGain1>-0.600</pnlValues.nudValueGain1>
       <pnlValues.nudValueGain2>1</pnlValues.nudValueGain2>
+      <pnlValues.nudValueGain3>0</pnlValues.nudValueGain3>
       <pnlValues.nudValueGain4>1</pnlValues.nudValueGain4>
       <pnlValues.nudValueGain5>1</pnlValues.nudValueGain5>
       <pnlValues.nudValueGain6>1</pnlValues.nudValueGain6>
       <pnlValues.nudValueGain7>-0.6</pnlValues.nudValueGain7>
-      <pnlValues.nudValueGain9>1</pnlValues.nudValueGain9>
+      <pnlValues.nudValueGain8>0</pnlValues.nudValueGain8>
       <pnlValues.nudValueGain10>1</pnlValues.nudValueGain10>
       <pnlValues.nudValueGain11>1</pnlValues.nudValueGain11>
       <pnlValues.nudValueGain12>1</pnlValues.nudValueGain12>
@@ -1225,21 +1213,21 @@
       <pnlValues.nudValueGain64>1</pnlValues.nudValueGain64>
       <pnlValues.nudValueGain65>1</pnlValues.nudValueGain65>
       <NUDDefault>0</NUDDefault>
-      <NUDTo>24</NUDTo>
-      <NUDFrom>-24</NUDFrom>
+      <NUDTo>30</NUDTo>
+      <NUDFrom>-30</NUDFrom>
       <NUDActuatorsBitOutput>24</NUDActuatorsBitOutput>
-      <pnlValues.afcValueFilter21.txtFilterText>REMAP(ROLLOVER(VALUE;90);-90;90;-12;12)</pnlValues.afcValueFilter21.txtFilterText>
-      <pnlValues.afcValueFilter22.txtFilterText>EMALP(EMALP(EMAHP(GAIN(VALUE;5);10);200);200)</pnlValues.afcValueFilter22.txtFilterText>
-      <pnlValues.afcValueFilter3.txtFilterText>EMALP(EMALP(EMALP(GAIN(VALUE;3);500);500);500)</pnlValues.afcValueFilter3.txtFilterText>
-      <pnlValues.afcValueFilter8.txtFilterText>EMALP(EMALP(EMALP(GAIN(VALUE;3);500);500);500)</pnlValues.afcValueFilter8.txtFilterText>
+      <pnlValues.afcValueFilter22.txtFilterText>EMALP(EMALP(EMAHP(GAIN(VALUE;10);10);300);300)</pnlValues.afcValueFilter22.txtFilterText>
+      <pnlValues.afcValueFilter9.txtFilterText>EMALP(EMALP(EMALP(GAIN(VALUE;1);500);500);500)</pnlValues.afcValueFilter9.txtFilterText>
+      <pnlValues.afcValueFilter21.txtFilterText>REMAP(ROLLOVER(VALUE;90);-90;90;-30;30)</pnlValues.afcValueFilter21.txtFilterText>
       <pnlValues.afcValueFilter0.txtFilterText>VALUE</pnlValues.afcValueFilter0.txtFilterText>
       <pnlValues.afcValueFilter1.txtFilterText>LOGISTIC(VALUE;10;1)</pnlValues.afcValueFilter1.txtFilterText>
       <pnlValues.afcValueFilter2.txtFilterText>VALUE</pnlValues.afcValueFilter2.txtFilterText>
+      <pnlValues.afcValueFilter3.txtFilterText>EMALP(EMALP(EMALP(GAIN(VALUE;3);500);500);500)</pnlValues.afcValueFilter3.txtFilterText>
       <pnlValues.afcValueFilter4.txtFilterText>VALUE</pnlValues.afcValueFilter4.txtFilterText>
       <pnlValues.afcValueFilter5.txtFilterText>VALUE</pnlValues.afcValueFilter5.txtFilterText>
       <pnlValues.afcValueFilter6.txtFilterText>VALUE</pnlValues.afcValueFilter6.txtFilterText>
       <pnlValues.afcValueFilter7.txtFilterText>LOGISTIC(VALUE;10;1)</pnlValues.afcValueFilter7.txtFilterText>
-      <pnlValues.afcValueFilter9.txtFilterText>VALUE</pnlValues.afcValueFilter9.txtFilterText>
+      <pnlValues.afcValueFilter8.txtFilterText>EMALP(EMALP(EMALP(GAIN(VALUE;1);500);500);500)</pnlValues.afcValueFilter8.txtFilterText>
       <pnlValues.afcValueFilter10.txtFilterText>VALUE</pnlValues.afcValueFilter10.txtFilterText>
       <pnlValues.afcValueFilter11.txtFilterText>VALUE</pnlValues.afcValueFilter11.txtFilterText>
       <pnlValues.afcValueFilter12.txtFilterText>VALUE</pnlValues.afcValueFilter12.txtFilterText>
@@ -1300,18 +1288,18 @@
       <TXTName>MULTI DIRECT :: ID43</TXTName>
       <SHActuatorValues.chkShowHide>True</SHActuatorValues.chkShowHide>
       <SHInputSelection.chkShowHide>True</SHInputSelection.chkShowHide>
-      <pnlValues.chkValue21>True</pnlValues.chkValue21>
       <pnlValues.chkValue22>True</pnlValues.chkValue22>
-      <pnlValues.chkValue3>True</pnlValues.chkValue3>
-      <pnlValues.chkValue8>True</pnlValues.chkValue8>
+      <pnlValues.chkValue9>True</pnlValues.chkValue9>
+      <pnlValues.chkValue21>True</pnlValues.chkValue21>
       <pnlValues.chkValue0>False</pnlValues.chkValue0>
       <pnlValues.chkValue1>False</pnlValues.chkValue1>
       <pnlValues.chkValue2>False</pnlValues.chkValue2>
+      <pnlValues.chkValue3>False</pnlValues.chkValue3>
       <pnlValues.chkValue4>False</pnlValues.chkValue4>
       <pnlValues.chkValue5>False</pnlValues.chkValue5>
       <pnlValues.chkValue6>False</pnlValues.chkValue6>
       <pnlValues.chkValue7>False</pnlValues.chkValue7>
-      <pnlValues.chkValue9>False</pnlValues.chkValue9>
+      <pnlValues.chkValue8>False</pnlValues.chkValue8>
       <pnlValues.chkValue10>False</pnlValues.chkValue10>
       <pnlValues.chkValue11>False</pnlValues.chkValue11>
       <pnlValues.chkValue12>False</pnlValues.chkValue12>
@@ -1366,17 +1354,17 @@
       <pnlValues.chkValue63>False</pnlValues.chkValue63>
       <pnlValues.chkValue64>False</pnlValues.chkValue64>
       <pnlValues.chkValue65>False</pnlValues.chkValue65>
-      <panel1.ddlValue>Longitudinal acc. with gravity</panel1.ddlValue>
+      <panel1.ddlValue>Pitch position</panel1.ddlValue>
       <TVInputSelection>
-        <item>SOURCE :: XPLANE 11 (UDP)</item>
-        <item>SOURCE :: XPLANE 11 GROUND (UDP)</item>
+        <item>SOURCE :: P3D (MMF+DLL)</item>
+        <item>SOURCE :: P3D (MMF+DLL) (Ground)</item>
       </TVInputSelection>
     </CONTROLS>
   </DIRECT>
   <OUTPUT>
     <Type>Mover.Outputs.Serial</Type>
     <Name>OUTPUT :: SERIAL :: ID37</Name>
-    <Location>3140,811</Location>
+    <Location>3576,846</Location>
     <Size>870,420</Size>
     <Visible>False</Visible>
     <CONTROLS>
@@ -1390,12 +1378,12 @@
       <TXTName>OUTPUT :: SERIAL :: ID37</TXTName>
       <SHDebug.chkShowHide>True</SHDebug.chkShowHide>
       <SHInputSelection.chkShowHide>True</SHInputSelection.chkShowHide>
-      <CHKAutoConnect>False</CHKAutoConnect>
+      <CHKAutoConnect>True</CHKAutoConnect>
       <DDLParity>None</DDLParity>
       <DDLStopBits>1</DDLStopBits>
       <DDLDataBits>8</DDLDataBits>
       <DDLBaudRate>250000</DDLBaudRate>
-      <DDLPort>COM3</DDLPort>
+      <DDLPort></DDLPort>
       <DDLTypeOfOutput>Binary</DDLTypeOfOutput>
       <TVInputSelection />
     </CONTROLS>
@@ -1408,132 +1396,22 @@
     <Visible>False</Visible>
     <CONTROLS>
       <nudHScale>33.333</nudHScale>
-      <nudVScale>100</nudVScale>
+      <nudVScale>1</nudVScale>
       <TXTUniqueName>11</TXTUniqueName>
       <TXTName>GRAPHICS VIEWER</TXTName>
       <shInputSelection.chkShowHide>True</shInputSelection.chkShowHide>
-      <tvInputSelection>
-        <item>SOURCE :: XPLANE 11 (UDP).Lateral acc. with gravity</item>
-        <item>SOURCE :: XPLANE 11 (UDP).Roll position</item>
-      </tvInputSelection>
+      <tvInputSelection />
     </CONTROLS>
   </VIEWER_GRAPHIC>
-  <OUTPUT>
-    <Type>Mover.Outputs.Memory</Type>
-    <Name>OUTPUT :: MMF</Name>
-    <Location>1009,414</Location>
-    <Size>870,420</Size>
-    <Visible>True</Visible>
-    <CONTROLS>
-      <NUDInterval>2</NUDInterval>
-      <NUDStopTime>0</NUDStopTime>
-      <NUDStartTime>0</NUDStartTime>
-      <TXTMMFName>motionRigPose</TXTMMFName>
-      <TXTStopString></TXTStopString>
-      <TXTSendString>&lt;PoseSway&gt;&lt;PoseSurge&gt;&lt;PoseHeave&gt;&lt;PoseYaw&gt;&lt;PoseRoll&gt;&lt;PosePitch&gt;</TXTSendString>
-      <TXTStartString></TXTStartString>
-      <TXTUniqueName>12</TXTUniqueName>
-      <TXTName>OUTPUT :: MMF</TXTName>
-      <SHDebug.chkShowHide>True</SHDebug.chkShowHide>
-      <SHInputSelection.chkShowHide>True</SHInputSelection.chkShowHide>
-      <CHKAutoConnect>False</CHKAutoConnect>
-      <DDLTypeOfOutput>Binary</DDLTypeOfOutput>
-      <TVInputSelection />
-    </CONTROLS>
-  </OUTPUT>
-  <RIG>
-    <Type>Mover.Rigs.RotatingHexapod</Type>
-    <Name>RIG :: ROTATING HEXAPOD</Name>
-    <Location>2598,295</Location>
-    <Size>1352,616</Size>
-    <Visible>True</Visible>
-    <CONTROLS>
-      <PNLActuatorsOutput.nudDefault0>0</PNLActuatorsOutput.nudDefault0>
-      <PNLActuatorsOutput.nudDefault1>0</PNLActuatorsOutput.nudDefault1>
-      <PNLActuatorsOutput.nudDefault2>0</PNLActuatorsOutput.nudDefault2>
-      <PNLActuatorsOutput.nudDefault3>0</PNLActuatorsOutput.nudDefault3>
-      <PNLActuatorsOutput.nudDefault4>0</PNLActuatorsOutput.nudDefault4>
-      <PNLActuatorsOutput.nudDefault5>0</PNLActuatorsOutput.nudDefault5>
-      <NUDActuatorsBitOutput>10</NUDActuatorsBitOutput>
-      <NUDGain>1</NUDGain>
-      <NUDScale>1</NUDScale>
-      <NUDSway>9999</NUDSway>
-      <NUDPitch>180</NUDPitch>
-      <NUDYaw>180</NUDYaw>
-      <NUDRoll>180</NUDRoll>
-      <NUDCORZ>0</NUDCORZ>
-      <NUDSurge>9999</NUDSurge>
-      <NUDCORY>0</NUDCORY>
-      <NUDHeave>9999</NUDHeave>
-      <NUDCORX>0</NUDCORX>
-      <NUDSingularityAngle>10</NUDSingularityAngle>
-      <NUDRange>90</NUDRange>
-      <NUDRigL2>485</NUDRigL2>
-      <NUDRigL1>485</NUDRigL1>
-      <NUDRigL3>80</NUDRigL3>
-      <NUDRigL4>740</NUDRigL4>
-      <NUDMiddle>29</NUDMiddle>
-      <NUDRod>540</NUDRod>
-      <NUDCrankAngle6>210</NUDCrankAngle6>
-      <NUDCrank>180</NUDCrank>
-      <NUDCrankAngle5>270</NUDCrankAngle5>
-      <NUDCrankAngle2>90</NUDCrankAngle2>
-      <NUDCrankAngle1>150</NUDCrankAngle1>
-      <NUDCrankAngle4>330</NUDCrankAngle4>
-      <NUDCrankAngle3>30</NUDCrankAngle3>
-      <NUDSwayDrive>0</NUDSwayDrive>
-      <NUDPitchDrive>0</NUDPitchDrive>
-      <NUDYawDrive>0</NUDYawDrive>
-      <NUDRollDrive>0</NUDRollDrive>
-      <NUDSurgeDrive>0</NUDSurgeDrive>
-      <NUDHeaveDrive>0</NUDHeaveDrive>
-      <NUDSwayPark>0</NUDSwayPark>
-      <NUDPitchPark>0</NUDPitchPark>
-      <NUDYawPark>0</NUDYawPark>
-      <NUDRollPark>0</NUDRollPark>
-      <NUDSurgePark>0</NUDSurgePark>
-      <NUDHeavePark>0</NUDHeavePark>
-      <PNLActuatorsOutput.txtKey0>Axis1a</PNLActuatorsOutput.txtKey0>
-      <PNLActuatorsOutput.txtKey1>Axis2a</PNLActuatorsOutput.txtKey1>
-      <PNLActuatorsOutput.txtKey2>Axis3a</PNLActuatorsOutput.txtKey2>
-      <PNLActuatorsOutput.txtKey3>Axis4a</PNLActuatorsOutput.txtKey3>
-      <PNLActuatorsOutput.txtKey4>Axis5a</PNLActuatorsOutput.txtKey4>
-      <PNLActuatorsOutput.txtKey5>Axis6a</PNLActuatorsOutput.txtKey5>
-      <AFCActuatorsFilter.txtFilterText>VALUE</AFCActuatorsFilter.txtFilterText>
-      <AFCPosesFilter.txtFilterText>EMALP(VALUE;200)</AFCPosesFilter.txtFilterText>
-      <TXTUniqueName>13</TXTUniqueName>
-      <TXTPitchKey>PosePitch</TXTPitchKey>
-      <TXTRollKey>PoseRoll</TXTRollKey>
-      <TXTYawKey>PoseYaw</TXTYawKey>
-      <TXTHeaveKey>PoseHeave</TXTHeaveKey>
-      <TXTSurgeKey>PoseSurge</TXTSurgeKey>
-      <TXTSwayKey>PoseSway</TXTSwayKey>
-      <TXTName>RIG :: ROTATING HEXAPOD</TXTName>
-      <SHInputSelection.chkShowHide>True</SHInputSelection.chkShowHide>
-      <SHActuators.chkShowHide>True</SHActuators.chkShowHide>
-      <CHKAutoGain>False</CHKAutoGain>
-      <CHKStayLastPossiblePose>False</CHKStayLastPossiblePose>
-      <CHKSwap1>False</CHKSwap1>
-      <CHKSwap2>True</CHKSwap2>
-      <CHKSwap3>False</CHKSwap3>
-      <CHKSwap4>True</CHKSwap4>
-      <CHKSwap5>False</CHKSwap5>
-      <CHKSwap6>True</CHKSwap6>
-      <CHKSwapSwapped>True</CHKSwapSwapped>
-      <TVInputSelection />
-    </CONTROLS>
-  </RIG>
   <Z_ORDER>
-    <item>4</item>
-    <item>2</item>
-    <item>3</item>
     <item>5</item>
+    <item>3</item>
+    <item>2</item>
+    <item>11</item>
+    <item>8</item>
+    <item>10</item>
+    <item>4</item>
     <item>6</item>
     <item>7</item>
-    <item>8</item>
-    <item>11</item>
-    <item>12</item>
-    <item>9</item>
-    <item>13</item>
   </Z_ORDER>
 </FLYPT_MOVER>
