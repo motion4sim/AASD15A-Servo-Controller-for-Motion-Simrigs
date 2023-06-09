@@ -1,11 +1,23 @@
 Motion4Sim DashBoard App
 
+Release v2.18 
+
+- added belt config
+- added disable autoconnect
+- added using standart "comport" feature
+- complete new code for communication
+- testet with win 10 only
+- changed and cleanup layout
+- needs fw >2.23
+
+
 Release v2.16 still Beta
 
 - fixed homing speed data
 - fixed crashing  App sometimes special with ftdi boards
 - some layout changes
 - added sfx 3 actor systems
+- fw  >2.15
 
 Release v2.15 Beta
 
