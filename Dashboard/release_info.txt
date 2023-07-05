@@ -1,5 +1,10 @@
 Motion4Sim DashBoard App
 
+Release v3.10
+
+- added support for Motioncueingsystem
+- fw 3.10 is recommend
+
 Release v2.18 
 
 - added belt config
