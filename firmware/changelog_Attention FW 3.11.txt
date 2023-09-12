@@ -1,5 +1,10 @@
 Motion4Sim
 
+Version 3.11 release
+
+continueing lcd fixes
+watch also 3.10 notice
+
 Version 3.10 release
 
 Pay attention Motioncueingsystem is W.I.P. start with low scale first
