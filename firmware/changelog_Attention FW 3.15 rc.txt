@@ -1,9 +1,50 @@
 Motion4Sim
 
+
+Version 3.15 release candidate for stable
+
+- lcd init problems fixed everything else seems to emi related
+- lcd only comes to garbled char when workhour timer is active (normaly deactivated)
+- long press (5s) of encoder button does a lcd screen init
+- double click feature for encoder button
+	-> fast double click switches main screen from 
+		gain"100%" -> "Sp Win" Spike Window -> "Belt" retreat -> "Filter" Emalp value back to gain
+	-> you can change value with encoder turning left or right
+	-> values were not saved to eeprom
+	-> for saving go to menu "Save and return"
+	-> with double click you can also leave any menu back to main screen with no saving
+- new Spike Filter design
+	
+	defined with 3 Values.
+	
+		Menu -> Filter 	-> Spike Filter 	
+				-> Spike Window
+				-> Sp.Filter smooth
+
+
+	-> Spike Window:  from 1...400% (or more) 100%  is 1/4 actuator range in pulses
+    	 	-this means if pulse input is more than say 100% (1/4 of actuator stroke) Spike is detected
+		-pulsestrain is cut/limited to Spike window size pulsecount
+	-> Spike Filter: 
+ 		- after Spike detection the Emalp(normal Filter) raises every frame(2ms) Spikestrength value is lowpass over raising emalp	
+		-> this means lower value faster growing Filter (after spike slower return to normal motion)
+		-> higher value ,lower growing filter ( after spike faster return to normal motion)
+	-> Sp. Filter smooth:  when spike is finished (pulsetrain smaller as Spike Window)
+		-> dyn Emalp filter decreases(2ms) with  Sp.Filter smooth ( Emalp over decr. value) 
+		-> this means higher value slower decrease and slower return to normal motion
+		-> and vice versa
+	
+	//for me follwing values have worked
+	//Spikestrength = 20 to 80  (higher means more smooth in spike)
+	//Spikewindow from 10%  for racing 20-40 % for flying  (higher means later spike detection)
+	//Spike smooth 2-10   (higher means longer of spike smoothing ,do not use 1 never ending spike) 
+
+
 Version 3.11 release
 
 continueing lcd fixes
 watch also 3.10 notice
+- long press (5s) of encoder button does a lcd screen init
 
 Version 3.10 release
 
@@ -23,7 +64,7 @@ Version 2.23 release
 - added dashboard support for belt configuration
 - added working hour meter reset support ( press user button > 15 seconds for reset)
 - lcd working now with no problems
-- this fw support only until pcb v. 2.08
+- this fw support only until pcb v. 1.08
 - last fw for this boards
 - some code improvements
 
