@@ -2,7 +2,7 @@ Motion4Sim DashBoard App
 
 Release v3.20
 
-- added Motion Cueing System 
+- added Filter based Motion Cueing System 
 - added Xplane, MSFS2020, DCS, Assetto Corsa Comp., Raceroom Source
 - added High/Low Precise Timers for Filtersystem
 - fixed Testpage bad Motion
@@ -10,6 +10,8 @@ Release v3.20
 - added some Option on Setup page
 - only works with fw 3.20
 - added some checks
+- changed installer lang to english
+- fixed em-state und extra01 state to combo boxes
 
 Release v3.10
 
