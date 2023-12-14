@@ -2,6 +2,12 @@ Motion4Sim DashBoard App
 
 Release v3.20
 
+Disclaimer! this Software is free to use and in development. 
+we explain that the controller from Motion4Sim is working indepently
+and there is no need to use this software to operate.
+we assume no liability for any damage caused by use.  
+you use it at your own risk.
+
 - added Filter based Motion Cueing System 
 - added Xplane, MSFS2020, DCS, Assetto Corsa Comp., Raceroom Source
 - added High/Low Precise Timers for Filtersystem
