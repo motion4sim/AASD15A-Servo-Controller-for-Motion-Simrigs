@@ -1,5 +1,17 @@
 Motion4Sim
 
+
+
+Version 3.21 dev build
+
+- added transition to standby with special triple emalp filtering 
+- also into motion from standby uses now this transition
+- setup transition speed for this its in seconds
+- please adjust the low speed to 5000*10hz in setup (Speed from/to Standby Position)
+- extra01 pin is now low at startup in case for brake nc use
+- software controller resetfunctions now only possible in save rig states
+- transition not testet with hw timers 
+
 Version 3.20
 
 -  removed motionsystem introduced in 3.10 -> done by Dashboard now
