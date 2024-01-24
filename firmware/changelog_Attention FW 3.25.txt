@@ -1,6 +1,19 @@
-Motion4Sim
+Motion4Sim M4S Controller Firmware
 
-Version 3.24 official
+Version 3.25 official
+
+- hardware pulsing is stable now ,just enable, works same, read advice in dashboard
+- small change to break release delaytiming
+- new spike algorithm is now implemented 
+	-> adjust spikwindow for setup from smaller value to higher
+	-> read also fw3.15 release note down this list
+- old spike is emalp+spike2 option now in filter setting
+- changed lowspeed in factory settings
+- changed breakdelay to 100ms in factory settings
+- @dureiken changed factory setting motionxp for spike to spike2 and cal/lowspeed settings
+- no changes to dashboard made same version 
+
+Version 3.24 
 
 - a lot of changes test your rig behaviour before pratical use!!
 - added new EM Button debouncing with Software and Hardware
