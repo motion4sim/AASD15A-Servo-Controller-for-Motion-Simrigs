@@ -1,6 +1,12 @@
 Motion4Sim M4S Controller Firmware
 
-Version 3.25 official
+Version 3.25 fix1
+
+- fixed  short brake release impulse when startup with EM Button engaged
+- fixed  online speed set to 50khz only in some conditions
+
+
+Version 3.25 
 
 - hardware pulsing is stable now ,just enable, works same, read advice in dashboard
 - small change to break release delaytiming
