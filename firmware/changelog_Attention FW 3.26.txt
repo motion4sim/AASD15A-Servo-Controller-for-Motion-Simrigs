@@ -1,5 +1,9 @@
 Motion4Sim M4S Controller Firmware
 
+Version 3.26
+
+- just for testing fw updates with flypt
+
 Version 3.25 fix1
 
 - fixed  short brake release impulse when startup with EM Button engaged
