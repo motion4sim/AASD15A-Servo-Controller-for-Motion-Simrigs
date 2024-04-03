@@ -7,6 +7,8 @@ we assume no liability for any damage caused by use.
 you use it at your own risk.
 
 
+
+
 Release v3.28  - not much tested so far but works here  therefore it is tesing release
 
 - added Dirt Rally 2.0 Dirt 4 support
@@ -16,7 +18,8 @@ Release v3.28  - not much tested so far but works here  therefore it is tesing r
 - added openxr mc support in motionsystem
 - added belt support for actuator 7 in motionsystem
 - added profile  import and export features
-
+- testing2 fixed comport vector overflow with mostly motionusb
+- fixed msfs source not disconnect when closing msfs
 
 
 
