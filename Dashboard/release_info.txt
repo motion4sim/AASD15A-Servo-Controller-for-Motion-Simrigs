@@ -18,8 +18,10 @@ Release v3.28  - not much tested so far but works here  therefore it is tesing r
 - added openxr mc support in motionsystem
 - added belt support for actuator 7 in motionsystem
 - added profile  import and export features
-- testing2 fixed comport vector overflow with mostly motionusb
-- fixed msfs source not disconnect when closing msfs
+- testing2: fixed comport vector overflow with mostly motionusb
+- testing2: fixed msfs source not disconnect when closing msfs
+- testing3: fixed xmlfileimport mapping
+- testing3: changed german error lang
 
 
 
