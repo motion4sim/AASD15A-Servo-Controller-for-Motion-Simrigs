@@ -6,6 +6,7 @@ Version 3.28
 - the end chars 0x0a 0x0d are replaced with crc16 checksumm
 - still back compatible to 0x0a 0x0d if send to recieve but sends only with crc so older dashboard will not recieve data
 - works only full with Dashboard >v3.28 because crc checks
+- testing1: fixed problems with motion usb
 
 Version 3.26
 
