@@ -6,10 +6,17 @@ and there is no need to use this software to operate.
 we assume no liability for any damage caused by use.  
 you use it at your own risk.
 
+Release v3.28
 
+-added F1-2023 Game Source
+-added Condor2 Soaring Source
+-fixed  crc Problems with older FW
+-for existing Installation add Profile from /program/motion4sim/profiles/motionprofile.xml
+-or replace in %appdata%/motion4sim .. you can backup this file and reload your old profiles
+-installer will not overwrite 
+-added smart controller support
 
-
-Release v3.28  - not much tested so far but works here  therefore it is tesing release
+Release v3.28 testing - not much tested so far but works here  therefore it is tesing release
 
 - added Dirt Rally 2.0 Dirt 4 support
 - added crc checksums for data transmission
