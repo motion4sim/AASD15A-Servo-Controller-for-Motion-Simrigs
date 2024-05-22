@@ -6,6 +6,15 @@ and there is no need to use this software to operate.
 we assume no liability for any damage caused by use.  
 you use it at your own risk.
 
+Release v3.29
+
+- added Source LFS
+- added patching for LFS
+- fixed flickering source combobox when connected, now combo is disabled
+- fixed wrong gamedetecting  F1_23;DCS;Dirt when using same udp port
+- fixed  ACC
+- improved some gamedetection
+
 Release v3.28++testing
 
 - added  Source
