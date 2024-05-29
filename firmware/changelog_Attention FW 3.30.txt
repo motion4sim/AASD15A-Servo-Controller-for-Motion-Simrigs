@@ -8,7 +8,8 @@ Version v3.30
 - edit via Handheld in Actuators menu or use Dashboard in Filter tab
 - only for direct mode!
 - in position mode you will need still clockwise actuator connection starting with 1 at front left actuator 
-
+- fixed shutdown function torque recognition and not rebooting
+- fixed service menu torque recognition
 
 Version 3.29
 
