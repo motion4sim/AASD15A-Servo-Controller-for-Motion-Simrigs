@@ -6,6 +6,16 @@ and there is no need to use this software to operate.
 we assume no liability for any damage caused by use.  
 you use it at your own risk.
 
+Release v3.30
+
+- config works only with fw 3.30 
+- added Actuator Input Data matrix, 
+- so you can use SRS or Simtools Actuator order without reconnecting
+- edit via Handheld in Actuators menu or use Dashboard in Filter tab
+- only for direct mode 
+- in position mode you will need clockwise actuator connection starting with 1 at front left actuator 
+
+
 Release v3.29
 
 - added Source LFS
