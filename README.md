@@ -1,6 +1,49 @@
 # AASD15A-Servo-Controller-for-Motion-Simrigs
 
+checkout our shop at motion4sim.com for more information
+
 Motion4Sim M4S Controller Firmware
+
+Version v3.30
+
+- factory reset required after flashing!!!
+- added Actuator Input Data matrix, 
+- so you can use SRS or Simtools Actuator order without reconnecting cables
+- edit via Handheld in Actuators menu or use Dashboard in Filter tab
+- only for direct mode!
+- in position mode you will need still clockwise actuator connection starting with 1 at front left actuator 
+- fixed shutdown function torque recognition and not rebooting
+- fixed service menu torque recognition
+
+Version 3.29
+
+- added separate fifo for usb motion and data
+- in principle, both USB ports can be operated in parallel
+  need to test what happens when Motion data is received on both ports
+  so be carefull using it
+- changed debouncing for killswitch and online switch
+- improvement of serial pattern detection
+- added SimHub  support
+
+Version 3.28 
+
+- added message crc datachecks to all communication 
+- the end chars 0x0a 0x0d are replaced with crc16 checksumm
+- still back compatible to 0x0a 0x0d if send to recieve but sends only with crc so older dashboard will not recieve data
+- update to Dashboard Version 3.28
+- works only full with Dashboard >=v3.28 because crc checks
+- fixed motionusb port problems
+
+
+Version 3.26
+
+- just for testing fw updates with flypt
+
+Version 3.25 fix1
+
+- fixed  short brake release impulse when startup with EM Button engaged
+- fixed  online speed set to 50khz only in some conditions
+
 
 Version 3.25 official
 
