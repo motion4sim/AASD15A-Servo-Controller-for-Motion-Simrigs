@@ -6,6 +6,13 @@ and there is no need to use this software to operate.
 we assume no liability for any damage caused by use.  
 you use it at your own risk.
 
+Release v3.31
+
+- added support for rFactor2 and F1-2024
+- rFactor needs special plugin to work so 
+- go to Config -> Source and  patch button will copy dll to rfactor plugin dir
+- fixed config window minimize bug
+
 Release v3.30
 
 - config works only with fw 3.30 
