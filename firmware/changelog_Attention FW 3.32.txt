@@ -1,5 +1,12 @@
 Motion4Sim M4S Controller Firmware
 
+
+Version v3.32 fix1
+
+- fixed online bt setup when using dashboard for config
+- limit mastergain in factory setting to 100%
+- fixed go online after homing command
+
 Version v3.32
 - factory reset required after flashing!!!
 - added support for latching and fixed Online switch Buttons .. only in controller Setup Menu
