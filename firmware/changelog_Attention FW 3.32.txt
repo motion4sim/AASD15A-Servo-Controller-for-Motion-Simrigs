@@ -1,6 +1,12 @@
 Motion4Sim M4S Controller Firmware
 
 
+Version v3.32 fix2
+
+- fixed broken motion usb port from fix1
+- almost stable reported
+- it keeps as testing because i have 2 weeks no rig to test finally
+
 Version v3.32 fix1
 
 - fixed online bt setup when using dashboard for config
