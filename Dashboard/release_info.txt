@@ -6,6 +6,12 @@ and there is no need to use this software to operate.
 we assume no liability for any damage caused by use.  
 you use it at your own risk.
 
+Release v4.22
+
+- added latest values to edit from Dashboard
+- added  udp support for new boards
+
+
 Release v3.31
 
 - added support for rFactor2 and F1-2024
