@@ -1,5 +1,21 @@
 Motion4Sim M4S Controller Firmware
 
+Version v4.25
+
+- RC for new stable
+- added belt torgue mode support for actuator 7
+- added I2C Handheld support
+- renew timer and event system
+- added basic hotplug support for ethernet
+- renew transitions for motion
+- new motiondata timeout activates transition when data the same > 2 seconds
+- added Demomode(rig configured for positionmode)
+- changed speeds for homing belt
+- watchdog improvement , but can still occure sometimes while booting up and init
+of ethernet needs longer
+- smaller bugfixes 
+
+
 Version v4.24
 
 - added m4s  & mxp license system to activate the pro features

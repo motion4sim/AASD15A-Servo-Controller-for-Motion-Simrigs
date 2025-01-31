@@ -6,6 +6,12 @@ and there is no need to use this software to operate.
 we assume no liability for any damage caused by use.  
 you use it at your own risk.
 
+Release v4.25
+
+- added Setup Options for Switch/PushButton
+- fixed some Profile saving/loading Issues
+- added Support for Torgue Mode Actuator 7
+
 Release v4.24
 
 - added check for fw bin files, checks files for integrity (works from fw 4.24 no support for older fw files)
