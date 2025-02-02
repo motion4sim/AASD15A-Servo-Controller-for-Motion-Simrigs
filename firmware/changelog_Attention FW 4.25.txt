@@ -1,5 +1,11 @@
 Motion4Sim M4S Controller Firmware
 
+Version v4.25 fix1
+
+- added RGB LCD support
+- fixed usb stuttering while getting to many Ethernet packets
+
+
 Version v4.25
 
 - RC for new stable
