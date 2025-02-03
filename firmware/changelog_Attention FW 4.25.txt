@@ -4,11 +4,10 @@ Version v4.25 fix1
 
 - added RGB LCD support
 - fixed usb stuttering while getting to many Ethernet packets
-- act.check updated
+
 
 Version v4.25
 
-- RC for new stable
 - added belt torgue mode support for actuator 7
 - added I2C Handheld support
 - renew timer and event system
