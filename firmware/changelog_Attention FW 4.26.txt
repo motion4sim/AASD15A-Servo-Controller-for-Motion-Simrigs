@@ -1,5 +1,16 @@
 Motion4Sim M4S Controller Firmware
 
+Version v4.26
+
+- fixed igpm timers not reporting correctly for multicast
+- added ethernet shutoff when using usb transfer
+- added eth hotplug disabled while online
+- speedup ethernet bootup and auth for new boards
+- added ip showing up in prestart menu when using pro
+- changed wtg configuration while startup
+- improved i2c smart handheld integration
+
+
 Version v4.25 fix1
 
 - added RGB LCD support
