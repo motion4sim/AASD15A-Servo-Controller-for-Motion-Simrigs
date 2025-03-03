@@ -87,6 +87,7 @@ Version v3.32
 - factory reset required after flashing!!!
 - added support for latching and fixed Online switch Buttons .. only in controller Setup Menu
 - hwpulsing now always activ when supported, pcb version >1.08 
+- pcb version < 1.09 not guaranteed to work correctly because of software pulsing
 - major changes to pulse engine
 - doubled pulse & inverse kinematics rate from 500/s to 1000/s
 - also filters calculation rate now from 2ms to 1ms  -> filter behaviour may change adjust values
