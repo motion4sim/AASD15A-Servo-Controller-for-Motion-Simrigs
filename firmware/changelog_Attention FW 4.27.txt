@@ -1,5 +1,20 @@
 Motion4Sim M4S Controller Firmware
 
+Version v4.27
+
+- added Settings menu entry in StartMenu
+- added Motion Operation Menu (old Menu) and splitted the entry in settings and motionoption
+- fixed bug in jitter correction from  fw 4.23 or dont know
+- fixed bug for pcb1.xx when return from motion operation and actuator check , thanks @greg for support
+- fixed brake clipping randomly thanks @motionbasti for helping testing
+- several code optimizing binary size shrinked a lot
+- changed cw/ccw definition internal 
+  ->note: - dashboard config files saved are wrong now for motion direction! edit them or make a new copy !!! 
+	  - also Dashboard preset(saved in config files) also have now opposite cw/ccw values !!	
+	  - factory reset is working!
+- officially only pcb from v1.09 are supported with fw >4.xx now
+
+
 Version v4.26
 
 - fixed igpm timers not reporting correctly for multicast
@@ -68,7 +83,8 @@ Version v4.10
 
 pay attention test safely before use some part are total new rewrites.
 
-fw is mainly tested on boards from pcb v 1.09 older may work!
+fw is mainly tested on boards from pcb v 1.09 older may work but !
+try on your own risc!!
  
 
 Version v3.32 fix2
