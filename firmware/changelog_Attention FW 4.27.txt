@@ -1,5 +1,11 @@
 Motion4Sim M4S Controller Firmware
 
+Version v.4.27 fix 1
+
+- fixed belt homing direction
+- change network missing message not show any more
+
+
 Version v4.27
 
 - added Settings menu entry in StartMenu
