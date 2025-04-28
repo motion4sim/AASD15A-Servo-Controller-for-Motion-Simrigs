@@ -6,6 +6,43 @@ and there is no need to use this software to operate.
 we assume no liability for any damage caused by use.  
 you use it at your own risk.
 
+Release v4.29
+
+- new Inno Setup Installer ,small version github
+  if it fails install manually before 
+	-dotNetFx472_Full_x86_x64.exe
+        -vc_redist.x64.exe 
+
+- fixed cw/ccw showed wrong in actuator settings
+- added lic update support for pro controllers
+
+- new motion system with a lot of new features
+- graphic Motion Telemetry Output
+- 3d View for 6dof Rigs
+- added new Belt Force System w.i.p.
+- added Wind output to Com (experimental not directly tested)
+- added OXRMC config GUI,when installed
+- added basic mover import (limited function, only for filterstrings and 1. Pose is primary and second is ground)
+- added Extra Effects Generator (Noise and Sinus only atm) 
+  -> Noise can be casaded to have Asphalt layer maybe w.i.p.
+
+- old profiles still supported import them
+
+- added new gamesource Eurp.Trucksimulator2 &American Truck Sim.
+- added Assetto Corsa Evo supp.
+- fixed Nolimits2 gimbal lock problem
+ 
+  Attention!!
+
+  1. backup your profile from %appdata%/Roaming/Motion4Sim/motionprofile.xml
+     normally it will not overwrite, but to be sure you have it save
+  2. please be carefull its w.i.p. maybe there are some things will not work or cause problems
+     i spent lot of time with it but i know i couldnt test everything !!
+  3. do not forget to enable motionsystem in Config ->Setup Tab for using
+  4. for networks setups please disable motion when using other motioncueing
+      otherwise it will send also data to the rig !!!!
+
+
 Release v4.25 fix1  
 
 - re upload not zipped for Win11 virus false detection problem
