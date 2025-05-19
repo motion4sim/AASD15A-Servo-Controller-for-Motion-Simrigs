@@ -6,6 +6,16 @@ and there is no need to use this software to operate.
 we assume no liability for any damage caused by use.  
 you use it at your own risk.
 
+Release v4.30
+
+- added support for Actuator8 WIND
+- added presetmanager, when add new profile to motionsystem
+- added wind support for motionsystem ( nolimits & xplane source support now wind) more to come
+- added new Filter Syntaxes :
+	ADD(VALUE; number)
+	SETVALUE(VALUE; number)
+
+
 Release v4.29
 
 - new Inno Setup Installer ,small version github
