@@ -1,0 +1,283 @@
+{
+  "Geometry": {
+    "Axis": [
+      {
+        "ReviewManager": {
+          "AvailableReviewKeys": "",
+          "BypassReviewKeys": []
+        },
+        "Settings": {
+          "KeepParkedWhenGameNotConnected": true,
+          "UseCorrectionCurve": false,
+          "SplineFilter": {
+            "ControlPoints": [
+              "0;0",
+              "20;20",
+              "40;40",
+              "60;60",
+              "80;80",
+              "100;100"
+            ],
+            "CurveFitting": 0,
+            "TypeName": "StartEndLockedSplineFilter"
+          },
+          "KeepParked": false,
+          "PullLimit": {
+            "Enabled": false,
+            "Limit": 75.0
+          },
+          "CenterOffset": 0.0,
+          "KeepParkedPosition": 2.0,
+          "OffsetRange": 10.0,
+          "ReleaseLimit": {
+            "Enabled": false,
+            "Limit": 28.0
+          },
+          "CenterPosition": 30.0,
+          "ActuatorsSpikeFilterPercentPerSecond": 500.0,
+          "BoundsEasing": false,
+          "ResetOffsetAtStartup": false,
+          "PresetSource": null,
+          "Version": 0
+        },
+        "TypeName": "BeltSingleAxis"
+      }
+    ],
+    "TypeName": "GenericGeometry6DofsRotary",
+    "BaseGeometry": {
+      "ReviewManager": {
+        "AvailableReviewKeys": "Dimensions",
+        "BypassReviewKeys": []
+      },
+      "Settings": {
+        "RodLength": 459.0,
+        "CrankLength": 180.0,
+        "CrankCenterAngle": 28.0,
+        "RotaryAngularRange": 85.0,
+        "ActuatorsSpikeFilterDegreesPerSecond": 20.0,
+        "ActuatorsLinearSpeedLimitMmPerSecond": 4505.0,
+        "ActuatorSafetyRangePercent": 20.0,
+        "ActuatorSafetyRangePredictionPercent": 5.0,
+        "SingularityLimit": 10.0,
+        "CenterOfRotationOffset": {
+          "CenterOfRotationTopOffset": 150.0,
+          "CenterOfRotationFrontOffset": -150.0
+        },
+        "MotorsSpacing": 465.0,
+        "MotorToMotorLinksSpacing": 465.0,
+        "TopMotorToMotorLinksSpacing": 168.0,
+        "TopLinksSpacing": 577.0,
+        "IsLoading": false,
+        "SeatZOffset": -150.0,
+        "SeatYOffset": 0.0,
+        "MotionCompensationSettings": {
+          "SeatToPivotHeightMm": 0.0
+        },
+        "Motors": [
+          {
+            "MotorRotation": 60.0,
+            "CrankRotationRange": 85.0,
+            "CrankLength": 180.0,
+            "ReverseCrankDirection": false,
+            "CrankDefaultRotation": 28.0,
+            "RodLength": 459.0,
+            "Index": 0,
+            "DistanceToHitBoxSigned": 0.0
+          },
+          {
+            "MotorRotation": 0.0,
+            "CrankRotationRange": 85.0,
+            "CrankLength": 180.0,
+            "ReverseCrankDirection": true,
+            "CrankDefaultRotation": 28.0,
+            "RodLength": 459.0,
+            "Index": 1,
+            "DistanceToHitBoxSigned": 0.0
+          },
+          {
+            "MotorRotation": 300.0,
+            "CrankRotationRange": 85.0,
+            "CrankLength": 180.0,
+            "ReverseCrankDirection": false,
+            "CrankDefaultRotation": 28.0,
+            "RodLength": 459.0,
+            "Index": 2,
+            "DistanceToHitBoxSigned": 0.0
+          },
+          {
+            "MotorRotation": 240.0,
+            "CrankRotationRange": 85.0,
+            "CrankLength": 180.0,
+            "ReverseCrankDirection": true,
+            "CrankDefaultRotation": 28.0,
+            "RodLength": 459.0,
+            "Index": 3,
+            "DistanceToHitBoxSigned": 0.0
+          },
+          {
+            "MotorRotation": 180.0,
+            "CrankRotationRange": 85.0,
+            "CrankLength": 180.0,
+            "ReverseCrankDirection": false,
+            "CrankDefaultRotation": 28.0,
+            "RodLength": 459.0,
+            "Index": 4,
+            "DistanceToHitBoxSigned": 0.0
+          },
+          {
+            "MotorRotation": 120.0,
+            "CrankRotationRange": 85.0,
+            "CrankLength": 180.0,
+            "ReverseCrankDirection": true,
+            "CrankDefaultRotation": 28.0,
+            "RodLength": 459.0,
+            "Index": 5,
+            "DistanceToHitBoxSigned": 0.0
+          }
+        ],
+        "LastAcceptedInput": null,
+        "PresetSource": null,
+        "Version": 0
+      },
+      "TypeName": "Geometry6DOFsStewartRotary"
+    }
+  },
+  "Output": {
+    "AggregatedOutputs": [
+      {
+        "IsEnabled": false,
+        "Output": {
+          "ImportType": 0,
+          "Comments": null,
+          "CustomName": null,
+          "ShowOriginalName": true,
+          "Settings": {
+            "EnableSerialLogging": false,
+            "SerialPort": "COM4",
+            "CalibrateAndPutOnlineAtStart": false,
+            "ActuatorOrderingSettings": {
+              "ConfigurationDone": true,
+              "UseParkPosition": false,
+              "ParkDuration": 5000,
+              "Roles": [
+                {
+                  "Role": 51
+                },
+                {
+                  "Role": 52
+                },
+                {
+                  "Role": 53
+                },
+                {
+                  "Role": 54
+                },
+                {
+                  "Role": 55
+                },
+                {
+                  "Role": 56
+                },
+                {
+                  "Role": 0
+                },
+                {
+                  "Role": 0
+                }
+              ]
+            },
+            "OutputId": "5ed589b8-0206-4253-837b-7551ce4f91be",
+            "PresetSource": null
+          },
+          "ReviewManager": {
+            "AvailableReviewKeys": "Controller_Connection, Controller_Mapping",
+            "BypassReviewKeys": []
+          },
+          "TypeName": "Motion4simControllerOutput"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "Output": {
+          "ImportType": 0,
+          "Comments": null,
+          "CustomName": null,
+          "ShowOriginalName": true,
+          "Settings": {
+            "GenericProtocolDefinition": {
+              "AxisResolution": 24,
+              "AxisFormat": 1,
+              "StartCommand": {
+                "MustWaitForMessage": false,
+                "WaitForMessage": null,
+                "WaitForDelay": 5000,
+                "Command": null,
+                "CommandDelay": 0
+              },
+              "UpdateCommand": {
+                "Command": "<0xFF><0xFF><Axis1><Axis2><Axis3><Axis4><Axis5><Axis6><Axis7><Axis8><0x0A><0x0D>",
+                "CommandDelay": 0
+              },
+              "StopCommand": {
+                "MustWaitForMessage": false,
+                "WaitForMessage": null,
+                "WaitForDelay": 5000,
+                "Command": null,
+                "CommandDelay": 0
+              },
+              "SettingsBuilder": null
+            },
+            "TargetIPAddress": "232.11.12.14",
+            "TargetPort": 51324,
+            "CheckTargetUsingPing": false,
+            "ActuatorOrderingSettings": {
+              "ConfigurationDone": true,
+              "UseParkPosition": false,
+              "ParkDuration": 5000,
+              "Roles": [
+                {
+                  "Role": 51
+                },
+                {
+                  "Role": 52
+                },
+                {
+                  "Role": 53
+                },
+                {
+                  "Role": 54
+                },
+                {
+                  "Role": 55
+                },
+                {
+                  "Role": 56
+                },
+                {
+                  "Role": 0
+                },
+                {
+                  "Role": 0
+                },
+                {
+                  "Role": 0
+                },
+                {
+                  "Role": 0
+                }
+              ]
+            },
+            "OutputId": "8b399852-14af-4a9c-b251-66472caadc45",
+            "PresetSource": null
+          },
+          "ReviewManager": {
+            "AvailableReviewKeys": "Controller_Connection, Controller_Mapping",
+            "BypassReviewKeys": []
+          },
+          "TypeName": "GenericUDPOutput"
+        }
+      }
+    ],
+    "TypeName": "ControllersAggregatorOutput"
+  }
+}
