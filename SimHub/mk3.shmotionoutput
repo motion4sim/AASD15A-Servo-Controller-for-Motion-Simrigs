@@ -55,7 +55,7 @@
         "CrankCenterAngle": 28.0,
         "RotaryAngularRange": 85.0,
         "ActuatorsSpikeFilterDegreesPerSecond": 20.0,
-        "ActuatorsLinearSpeedLimitMmPerSecond": 4505.0,
+        "ActuatorsLinearSpeedLimitMmPerSecond": 450.0,
         "ActuatorSafetyRangePercent": 20.0,
         "ActuatorSafetyRangePredictionPercent": 5.0,
         "SingularityLimit": 10.0,
