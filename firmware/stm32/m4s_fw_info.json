@@ -2,14 +2,14 @@
   "signature": "m4s-fw",
   "version": {
     "major": 5,
-    "minor": 32
+    "minor": 34
   },
   "firmware": {
-    "url": "http://m4s-service.motion4sim.com/m4s-fw/m4s_fw_STM_5_32.bin",
-    "length": 473608,
-    "crc32": "0x0ED7972A",
+    "url": "http://m4s-service.motion4sim.com/m4s-fw/m4s_fw_stm_5_34.bin",
+    "length": 599560,
+    "crc32": "0x5D81302B",
     "aes_encrypted": true
   },
-  "release_date": "2025-11-04T19:07:34Z",
+  "release_date": "2026-01-09T17:24:13Z",
   "comment": "Bugfixes \u0026 improvements"
 }
