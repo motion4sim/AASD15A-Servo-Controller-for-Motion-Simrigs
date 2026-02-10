@@ -6,6 +6,17 @@ and there is no need to use this software to operate.
 we assume no liability for any damage caused by use.  
 you use it at your own risk.
 
+Release v4.40
+
+- updated cfg exchange system to CBOR for increased flexibility
+- switched cfg files to JSON (compatible with web dashboard cfg files)
+note: older cfg files are still supported — load them and verify the configuration
+- changed motor speed unit from frequency to RPM
+- added EtherCAT configuration tab
+- various minor improvements and fixes
+- works with STm fw and latest Atmel fw
+
+
 Release v4.30
 
 - added support for Actuator8 WIND
