@@ -6,7 +6,7 @@ and there is no need to use this software to operate.
 we assume no liability for any damage caused by use.  
 you use it at your own risk.
 
-Release v4.40
+Release v5.34
 
 - updated cfg exchange system to CBOR for increased flexibility
 - switched cfg files to JSON (compatible with web dashboard cfg files)
