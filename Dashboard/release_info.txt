@@ -6,6 +6,15 @@ and there is no need to use this software to operate.
 we assume no liability for any damage caused by use.  
 you use it at your own risk.
 
+
+Release v5.35
+
+- added new Rigtypes support
+- added shutdown backoff for actuator shutdown function
+- update fw update with fw check and downloader
+- added auto token function for offline license activation 
+
+
 Release v5.34
 
 - updated cfg exchange system to CBOR for increased flexibility

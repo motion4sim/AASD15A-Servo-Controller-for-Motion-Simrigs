@@ -1,0 +1,15 @@
+{
+  "signature": "m4s-fw",
+  "version": {
+    "major": 5,
+    "minor": 35
+  },
+  "firmware": {
+    "url": "http://m4s-service.motion4sim.com/m4s-fw/m4s_fw_STM_v5_35.bin",
+    "length": 772104,
+    "crc32": "0xCD19417D",
+    "aes_encrypted": true
+  },
+  "release_date": "2026-03-24T17:11:03Z",
+  "comment": "Bugfixes \u0026 improvements"
+}

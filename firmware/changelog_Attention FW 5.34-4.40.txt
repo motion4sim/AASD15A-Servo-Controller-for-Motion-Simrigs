@@ -2,7 +2,29 @@ Motion4Sim M4S Controller Firmware
 
 starting new pcb revision 3.xx with STM32 MCU
 
-Version v5.34   Attention not compatible with older boards >pcb rev 3.xx !!!!!
+
+Attention  !!!!!!
+
+latest 5.35 is only for boards shipped from 2026 !!!!
+
+for earlier boards latest fw is 4.40 (atmel mcu boards)
+
+
+Version v5.35
+
+- note update takes 3-4 minutes
+- added new rigtypes 
+- factory reset linear is now vnm geometry and settings
+- factory rest rotational is now mk3 settings
+- added mxp rigtypes
+- improved shutdown function for actuators  incl backoff factors
+- added token activation support for pro & pro+ boards (no online needed)
+- repaired actuator check for step/dir interface
+- small release bugfixes
+- bootloader fw update, ethernet fw update
+- governor fw update
+
+Version v5.34   Attention not compatible with older boards , pcb must be > rev 3.xx !!!!!
 
 - complete new code for stm mcu
 - starting with all the features from 4.40
