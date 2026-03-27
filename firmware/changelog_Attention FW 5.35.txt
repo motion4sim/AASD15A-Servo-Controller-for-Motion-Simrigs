@@ -20,6 +20,7 @@ Version v5.35
 - improved shutdown function for actuators  incl backoff factors
 - added token activation support for pro & pro+ boards (no online needed)
 - repaired actuator check for step/dir interface
+- added  rs485 support
 - small release bugfixes
 - bootloader fw update, ethernet fw update
 - governor fw update
