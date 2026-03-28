@@ -7,9 +7,9 @@
   "firmware": {
     "url": "http://m4s-service.motion4sim.com/m4s-fw/m4s_fw_STM_v5_35.bin",
     "length": 769544,
-    "crc32": "0x7406F73C",
+    "crc32": "0x2A2B8BB2",
     "aes_encrypted": true
   },
-  "release_date": "2026-03-27T08:57:14Z",
+  "release_date": "2026-03-28T15:23:55Z",
   "comment": "Bugfixes \u0026 improvements"
 }
