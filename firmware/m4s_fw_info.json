@@ -5,11 +5,11 @@
     "minor": 35
   },
   "firmware": {
-    "url": "http://m4s-service.motion4sim.com/m4s-fw/m4s_fw_STM_v5_35.bin",
-    "length": 769544,
-    "crc32": "0x2A2B8BB2",
+    "url": "http://m4s-service.motion4sim.com/m4s-fw/m4s_fw_STM_v5_35_ec_dbg.bin",
+    "length": 629768,
+    "crc32": "0xE603E152",
     "aes_encrypted": true
   },
-  "release_date": "2026-03-28T15:23:55Z",
+  "release_date": "2026-04-09T17:59:58Z",
   "comment": "Bugfixes \u0026 improvements"
 }
