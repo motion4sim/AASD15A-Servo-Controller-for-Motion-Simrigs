@@ -6,6 +6,12 @@ and there is no need to use this software to operate.
 we assume no liability for any damage caused by use.  
 you use it at your own risk.
 
+Release v5.36
+
+- added new Onlinebutton Settings Latching NO/NC Momentary NC/NO
+- correction of some Rig presets
+- added WebDashboard URL configuration
+
 
 Release v5.35
 
