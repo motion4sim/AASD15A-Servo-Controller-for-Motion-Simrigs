@@ -5,9 +5,72 @@ starting new pcb revision 3.xx with STM32 MCU
 
 Attention  !!!!!!
 
-latest 5.36 is only for boards shipped from 2026 !!!!
+latest 5.37 is only for boards shipped from 2026 !!!!
 
 for earlier boards latest fw is 4.41 (atmel mcu boards)
+
+
+## v5.37 — 2026-06-02
+
+> ⚠️ **IMPORTANT — READ BEFORE FLASHING**
+>
+> This firmware update also installs a **new bootloader** and a **new governor firmware**.
+>
+> **DO NOT unplug the board from USB power until it has fully rebooted after flashing.**
+> After the flash completes, the board automatically installs the new bootloader during the first reboot.
+> If you disconnect power before this process has finished, the board may fail to start and
+> will need to be returned to factory for recovery.
+
+---
+
+### Summary
+
+v5.37 is a significant release focused on three areas: a fully modular brake subsystem, a redesigned governor communication protocol, and a series of stability and correctness fixes across PWM, EtherCAT homing, motion filtering, and the TWI/I²C driver.
+
+---
+
+### Brake System — Modularisation
+- Brake logic extracted into a dedicated module
+- Added cold-start initialisation and HoldPower brake-engage on motion-exit
+- Brake release now properly synchronised with the governor delay
+- Hot-plug handling simplified: every reconnect triggers a full re-init
+- refactored with clean hot-plug detection
+- Belt-disable and brake interaction corrected
+
+### Governor Protocol
+- New compact **17-byte binary protocol** with sequence counter, flags, CRC-16/ARC, and reset-resume logic (replaces previous ad-hoc format)
+- Added 49-byte extended read for debug-log download from the governor
+- Added debug trace on brake-status changes
+
+### TWI / I²C Driver
+- Full refactor of the TWI driver
+- I²C speed is now configurable at runtime
+
+### Motion Filter
+- Filter modes converted to an enum; external `OFF` is no longer permitted directly
+- Soft-limiter is now optional per configuration (NEW FILTER)
+- Internal filter calculations promoted to `double` precision (1 ms motion cycle)
+
+### EtherCAT
+- Limit-switch homing via DI1 implemented
+- DIO debug logger added
+- Brake configuration is now explicit in the EtherCAT application layer
+
+### PWM / DMA
+- `PWM_SetFrequency`: fixed skip logic, division-by-zero guard, and slot boundary check
+- **Adaptive Pulsing** introduced — replaces the legacy block-pulse routine with a fully DMA-driven implementation, now also working correctly with `pn98 = 1`
+
+  Previously, all pulses within a 1 ms cycle were fired as a block — the only approach technically possible on older hardware. With Adaptive Pulsing, a frame buffer distributes the pulses evenly across the full 1 ms window using MDMA. This means the servo experiences significantly fewer micro-accelerations and decelerations and instead moves continuously. The improvement is most noticeable during slow movements, making this a meaningful motion quality upgrade especially for flight simulation.
+  NOTE: for activating adaptive Pulsing use the Checkbox in the Setup Tab
+  -> this only effects STEP/DIR pulsing not for EC drives.
+
+
+### Belt / Actuator
+- Fixed belt park direction
+- Fixed belt running direction when going offline
+
+
+
 
 Version v5.36
 
@@ -33,9 +96,9 @@ Version v4.41
 
 - Bugfix for RIC numbers: resolved sporadic incorrect “curved” homing behavior
 - Added extended configuration options for the Online button:
-  * Normally Closed (Latching)
-  * Normally Closed (Momentary)
+  * Normally Closed (Latching & Momentary)
   * Normally Open (Latching & Momentary)
+- added long Button press feature triggers shutdown for momentary buttons
 - Improved shutdown functionality, aligned with STM firmware implementations
 
 
