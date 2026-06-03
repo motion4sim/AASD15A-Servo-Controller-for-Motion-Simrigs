@@ -6,6 +6,13 @@ and there is no need to use this software to operate.
 we assume no liability for any damage caused by use.  
 you use it at your own risk.
 
+Release v5.36.2
+
+- Hotfix for fw 5.37 Spike filter switching 
+  -> related to fw changes
+- added extension json config files for EC config data  
+
+
 Release v5.36
 
 - added new Onlinebutton Settings Latching NO/NC Momentary NC/NO
