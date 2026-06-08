@@ -5,11 +5,11 @@
     "minor": 37
   },
   "firmware": {
-    "url": "http://m4s-service.motion4sim.com/m4s-fw/m4s_fw_STM_v5_37_blu.bin",
+    "url": "http://m4s-service.motion4sim.com/m4s-fw/m4s_fw_STM_v5_37_blu_spike_hotfix.bin",
     "length": 809480,
-    "crc32": "0xF87C5DD0",
+    "crc32": "0x974A3223",
     "aes_encrypted": true
   },
-  "release_date": "2026-06-02T06:07:37Z",
+  "release_date": "2026-06-08T10:45:52Z",
   "comment": "Bugfixes \u0026 improvements"
 }

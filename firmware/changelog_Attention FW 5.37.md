@@ -10,6 +10,10 @@ latest 5.37 is only for boards shipped from 2026 !!!!
 for earlier boards latest fw is 4.41 (atmel mcu boards)
 
 
+## v5.37-hotfix — 2026-06-08
+
+- fixed wrong spikefilter switch on/off or query
+
 ## v5.37 — 2026-06-02
 
 > ⚠️ **IMPORTANT — READ BEFORE FLASHING**
